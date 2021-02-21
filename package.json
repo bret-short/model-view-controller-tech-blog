@@ -1,0 +1,19 @@
+{
+  "name": "model-view-controller-tech-blog",
+  "version": "1.0.0",
+  "description": "CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bret-short/model-view-controller-tech-blog.git"
+  },
+  "author": "Bret Short",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bret-short/model-view-controller-tech-blog/issues"
+  },
+  "homepage": "https://github.com/bret-short/model-view-controller-tech-blog#readme"
+}
