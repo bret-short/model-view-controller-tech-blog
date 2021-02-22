@@ -183,7 +183,7 @@ h4 {
 }
 
 .link {
-    color: var(--light-dark);
+    color: var(--light);
 }
 
 .login-link {
@@ -194,6 +194,7 @@ h4 {
     padding: 10px;
     line-height: 1.25;
     float: top;
+    border-radius: 50%;
 }
 
 footer {
@@ -216,7 +217,7 @@ footer {
 }
 
 .form-input {
-    width: 100%;
+    width: 50%;
     padding: 3%;
     margin: 5px 0;
     font-size: 1.2rem;
