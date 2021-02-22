@@ -28,7 +28,7 @@ router.get('/', withAuth, (req, res) => {
             ]
         })
         .then(dbPostData => {
-            const posts = dbPostData.map(post => post.get({ plain: true }));
+            const posts = dbPostData.map((post) => post.get({ plain: true }));
             res.render('dashboard', { posts, loggedIn: true });
         })
         .catch(err => {
@@ -41,15 +41,13 @@ router.get('/edit/:id', withAuth, (req, res) => {
             where: {
                 id: req.params.id
             },
-            attributes: ['id',
+            attributes: [
+                'id',
                 'title',
                 'content',
                 'created_at'
             ],
-            include: [{
-                    model: User,
-                    attributes: ['username']
-                },
+            include: [
                 {
                     model: Comment,
                     attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
@@ -57,6 +55,10 @@ router.get('/edit/:id', withAuth, (req, res) => {
                         model: User,
                         attributes: ['username']
                     }
+                },
+                {
+                    model: User,
+                    attributes: ['username']
                 }
             ]
         })
